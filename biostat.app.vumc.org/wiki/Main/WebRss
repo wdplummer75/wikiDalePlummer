@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wiki="http://purl.org/rss/1.0/modules/wiki/" ><channel rdf:about="https://biostat.app.vumc.org/wiki/Main">
+<title>Vanderbilt Biostatistics Wiki's Main web</title>
+  <link>https://biostat.app.vumc.org/wiki/Main</link>
+  <description>The Main web of Vanderbilt Biostatistics Wiki. Welcome to Vanderbilt Biostatistics Wiki ... meet people on this site </description>
+<image rdf:resource="https://biostat.app.vumc.org/wiki/pub/Main/SitePreferences/Lockup_VUMC_DeptofBiostatistics_COLORe.png" />
+  <dc:language>en-us</dc:language>
+  <dc:rights>Copyright 2024 by contributing authors</dc:rights>
+  <dc:publisher>Wiki Administrator [biostat-it@vumc.org]</dc:publisher>
+  <dc:creator>The contributing authors of Vanderbilt Biostatistics Wiki</dc:creator>
+  <dc:source>Vanderbilt Biostatistics Wiki</dc:source>
+  <items>
+    <rdf:Seq>
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/DalesNotes" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/RobertGreevy" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/Clinics" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/MondayClinicNotes" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/WednesdayClinicNotes" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/WebNotify" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/CourseCausalInference" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/ThursdayClinicNotes" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/GraduateStudentGroup" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/TuesdayClinicNotes" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/HaoWu" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/StatCollabCourse" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/AdminGroup" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/BiostatUsersGroup" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/ChihTingYang" />
+      <rdf:li rdf:resource="https://biostat.app.vumc.org/wiki/Main/HackerGroupForHackersGroup" />
+    </rdf:Seq>
+  </items>
+</channel>
+<image rdf:about="https://biostat.app.vumc.org/wiki/pub/Main/SitePreferences/Lockup_VUMC_DeptofBiostatistics_COLORe.png">
+  <title>Vanderbilt Biostatistics Home.Main</title>
+  <link>https://biostat.app.vumc.org/wiki/Main</link>
+  <url>https://biostat.app.vumc.org/wiki/pub/Main/SitePreferences/Lockup_VUMC_DeptofBiostatistics_COLORe.png</url>
+</image>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/DalesNotes">
+  <title>DalesNotes</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/DalesNotes</link>
+  <description>Dale's Notes This is a bunch of notes that I have collected over time to help me remember stuff. I don't maintain this very well, so some of it may be out of dat... (last changed by DalePlummer)</description>
+  <dc:date>2024-09-19T11:24:11-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.DalePlummer">
+      <rdf:value>DalePlummer</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/RobertGreevy">
+  <title>RobertGreevy</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/RobertGreevy</link>
+  <description>Robert Alan Greevy, Jr, PhD Professor of Biostatistics Director of Biostatistics,Center for Health Services Research Office Address: 121A 11th floor 2525 West ... (last changed by RobertGreevy)</description>
+  <dc:date>2024-09-18T15:46:35-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.RobertGreevy">
+      <rdf:value>RobertGreevy</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/Clinics">
+  <title>Clinics</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/Clinics</link>
+  <description>Biostatistics Clinics All Biostatistics clinics are held via teleconference (Microsoft Teams). Monday Friday Noon 1:15pm Biostatistics Clinics, a free service st... (last changed by PegDuthie)</description>
+  <dc:date>2024-09-16T15:46:00-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.PegDuthie">
+      <rdf:value>PegDuthie</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/MondayClinicNotes">
+  <title>MondayClinicNotes</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/MondayClinicNotes</link>
+  <description>Health services research, diagnosis, and prognosis Click here for 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, and before. Current Notes (2024) ... (last changed by IneSohn)</description>
+  <dc:date>2024-09-16T12:45:27-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.IneSohn">
+      <rdf:value>IneSohn</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/WednesdayClinicNotes">
+  <title>WednesdayClinicNotes</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/WednesdayClinicNotes</link>
+  <description>Surgery, anesthesiology, and emergency and critical care medicine The Biostatistics Clinic on Wednesdays is dedicated to biostatistics applications in surgery, an... (last changed by IneSohn)</description>
+  <dc:date>2024-09-16T09:29:30-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.IneSohn">
+      <rdf:value>IneSohn</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/WebNotify">
+  <title>WebNotify</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/WebNotify</link>
+  <description>* .WikiGuest * .WikiGuest example #64;your.company * .DalePlummer: * * .JeremyStephens: 2016DeptRetreat * .JoAnnAlvarez: HmiscNew? * .KaixingLiu:... (last changed by KaixingLiu)</description>
+  <dc:date>2024-09-13T10:58:16-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.KaixingLiu">
+      <rdf:value>KaixingLiu</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/CourseCausalInference">
+  <title>CourseCausalInference</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/CourseCausalInference</link>
+  <description>Causal Inference (Fall 2024) Instructor * Bryan Shepherd, PhD, Professor of Biostatistics * bryan.shepherd #64;vanderbilt.edu; 2525 West End, 11119; 615 34... (last changed by BryanShepherd)</description>
+  <dc:date>2024-09-11T16:52:00-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.BryanShepherd">
+      <rdf:value>BryanShepherd</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/ThursdayClinicNotes">
+  <title>ThursdayClinicNotes</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/ThursdayClinicNotes</link>
+  <description>Clinical and Health Research Clinic Click here for 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, and before. Current Notes (2024) 2024 September ... (last changed by IneSohn)</description>
+  <dc:date>2024-09-09T13:40:23-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.IneSohn">
+      <rdf:value>IneSohn</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/GraduateStudentGroup">
+  <title>GraduateStudentGroup</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/GraduateStudentGroup</link>
+  <description>Biostatistics Graduate Student Group * Set GROUP = LindaWilson, Main.LaurieSamuels, Main.SarahFletcher, Main.QiLiu, Main.JacobVanHouten, Main.MinchunZhou, Main... (last changed by ColeBeck)</description>
+  <dc:date>2024-09-09T10:52:33-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.ColeBeck">
+      <rdf:value>ColeBeck</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/TuesdayClinicNotes">
+  <title>TuesdayClinicNotes</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/TuesdayClinicNotes</link>
+  <description>Omics Data Clinic Notes and Analyses 2024 September 10 Angela Liu (Shawniqua Williams Roberson), Internal Medicine Studying EEG metrics in different clinical de... (last changed by IneSohn)</description>
+  <dc:date>2024-09-04T14:28:59-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.IneSohn">
+      <rdf:value>IneSohn</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/HaoWu">
+  <title>HaoWu</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/HaoWu</link>
+  <description>HaoWu (last changed by RegistrationAgent)</description>
+  <dc:date>2024-09-03T09:07:22-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.RegistrationAgent">
+      <rdf:value>RegistrationAgent</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/StatCollabCourse">
+  <title>StatCollabCourse</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/StatCollabCourse</link>
+  <description>Statistical Collaboration in Health Science Instructors MarioDavidson Course Number 2024.08.FALL.GS.BIOS.7351.01 Email mario.davidson #64;vumc.org... (last changed by MarioDavidson)</description>
+  <dc:date>2024-08-30T13:00:31-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.MarioDavidson">
+      <rdf:value>MarioDavidson</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/AdminGroup">
+  <title>AdminGroup</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/AdminGroup</link>
+  <description>How to add the first administrator If you haven't previously set up an administrator, follow these steps: * Note: This help text will disappear once you have ... (last changed by AdminUser)</description>
+  <dc:date>2024-08-29T14:55:37-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.AdminUser">
+      <rdf:value>admin</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/BiostatUsersGroup">
+  <title>BiostatUsersGroup</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/BiostatUsersGroup</link>
+  <description>Biostat Users Group (last changed by AdminUser)</description>
+  <dc:date>2024-08-29T14:47:18-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.AdminUser">
+      <rdf:value>admin</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/ChihTingYang">
+  <title>ChihTingYang</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/ChihTingYang</link>
+  <description>ChihTingYang (last changed by RegistrationAgent)</description>
+  <dc:date>2024-08-29T09:48:46-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.RegistrationAgent">
+      <rdf:value>RegistrationAgent</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<item rdf:about="https://biostat.app.vumc.org/wiki/Main/HackerGroupForHackersGroup">
+  <title>HackerGroupForHackersGroup</title>
+  <link>https://biostat.app.vumc.org/wiki/Main/HackerGroupForHackersGroup</link>
+  <description>Edit this topic to add a description to the HackerGroupForHackersGroup (last changed by MorganBritt)</description>
+  <dc:date>2024-08-16T09:41:07-05:00</dc:date>
+  <dc:contributor>
+    <rdf:Description link="https://biostat.app.vumc.org/wiki?topic=Main.MorganBritt">
+      <rdf:value>MorganBritt</rdf:value>
+    </rdf:Description>
+  </dc:contributor>
+</item>
+<!-- <ul>
+<li> Set SKIN = rss
+</li> <li> Set COVER = rss
+</li></ul> 
+-->
+</rdf:RDF>

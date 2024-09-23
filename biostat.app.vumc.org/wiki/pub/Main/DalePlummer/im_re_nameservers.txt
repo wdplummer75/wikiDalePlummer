@@ -1,0 +1,18 @@
+[5/26/2016 8:46 AM] Longwisch, Wilbur L.: 
+did you see my email and did that answer the question you all were having?
+[5/26/2016 8:47 AM] Plummer, Dale: 
+Yes I did and I that seems to be the answer.  Do you know - are these names likely to stay the same for a long time?
+[5/26/2016 8:47 AM] Longwisch, Wilbur L.: 
+should
+That was part of the split
+to get them in the future should they change, just use a client to get a dhcp response and that will give you the current servers
+[5/26/2016 8:48 AM] Plummer, Dale: 
+OK.  I will use these names.  Did I miss an announcement somewhere of this change?  I can't find an email discussing it.
+[5/26/2016 8:49 AM] Longwisch, Wilbur L.: 
+not sure it was announced,  there was a change notice but it didnt' really say name servers were changing.  they just changed the options in the dhcp server to point to the new ones,  we've been on them with the managed servers for a few months now
+[5/26/2016 8:50 AM] Plummer, Dale: 
+It is creating a bit of havoc with my Linux users who have restrictive firewalls.  Anyway thanks for your help.  I appreciate it.
+[5/26/2016 8:50 AM] Longwisch, Wilbur L.: 
+Being that restrictive on 53/udp is kinda their own problem, imo
+[5/26/2016 8:51 AM] Plummer, Dale: 
+Could be.  Thanks.

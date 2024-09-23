@@ -1,0 +1,419 @@
+<!DOCTYPE html><html lang="en">
+
+<!-- Mirrored from biostat.app.vumc.org/wiki/Main/PowerSampleSize by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 16:34:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<title> PowerSampleSize &lt; Main &lt; Vanderbilt Biostatistics Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, user-scalable=yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="icon" href="../pub/Main/SitePreferences/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../pub/Main/SitePreferences/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="https://biostat.app.vumc.org/wiki/bin/edit/Main/PowerSampleSize?t=1726763566" type="application/x-wiki" title="edit PowerSampleSize" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss" />
+<base  /><!--[if IE]></base><![endif]-->
+<link rel='stylesheet' href='../pub/System/PageOptimizerPlugin/cache/76ea346e610aea74367a807e2dd00ef6.css' class='JQUERYPLUGIN::THEME JSCalendarContrib/calendar-large SMILIESPLUGIN head' media='all' />
+<style> .calendar {z-index:2000;}</style>
+
+<style class='head TABLEPLUGIN_default' type="text/css" media="all">
+body .foswikiTable {border-width:1px}
+body .foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+body .foswikiTable td {border-style:solid none; vertical-align:top}
+body .foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+body .foswikiTable th a:link {color:#000000}
+body .foswikiTable th a:visited {color:#000000}
+body .foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+body .foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+body .foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+body .foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+body .foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+body .foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style>
+<style class='head TABLEPLUGIN_specific' type="text/css" media="all">
+body .foswikiTable#tablePowerSampleSize1 td {vertical-align:middle; vertical-align:top}
+body .foswikiTable#tablePowerSampleSize1 td.foswikiTableCol0 {text-align:left}
+body .foswikiTable#tablePowerSampleSize1 td.foswikiTableCol1 {text-align:left}
+body .foswikiTable#tablePowerSampleSize1 td.foswikiTableCol2 {text-align:left}
+body .foswikiTable#tablePowerSampleSize1 td.foswikiTableCol3 {text-align:right}
+body .foswikiTable#tablePowerSampleSize1 td.foswikiTableCol4 {text-align:left}
+body .foswikiTable#tablePowerSampleSize1 td.foswikiTableCol5 {text-align:left}
+body .foswikiTable#tablePowerSampleSize1 td.foswikiTableCol6 {text-align:left}
+body .foswikiTable#tablePowerSampleSize1 td.foswikiTableCol7 {text-align:left}
+body .foswikiTable#tablePowerSampleSize1 th {vertical-align:middle; background-color:#ffffff; color:#0066cc; text-align:left}
+body .foswikiTable#tablePowerSampleSize1 th a:link {color:#0066cc}
+body .foswikiTable#tablePowerSampleSize1 th a:visited {color:#0066cc}
+body .foswikiTable#tablePowerSampleSize1 th a:hover {color:#0066cc; background-color:#ffffff}
+body .foswikiTable#tablePowerSampleSize1 th.foswikiSortedCol {background-color:#eeeeee}
+body .foswikiTable#tablePowerSampleSize1 tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+body .foswikiTable#tablePowerSampleSize1 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f5f5f5}
+</style>
+
+<style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator,
+	.patternWebIndicator a {
+		background-color:#9b031e;
+	}
+	#patternTopBarContents { background-image:url(../pub/Main/SitePreferences/top_bar_gradient.png); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#FFFFFF;}
+.patternBookView {
+	border-color:#9b031e;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<link rel='stylesheet' href='../pub/System/PatternSkin/print.css' media='print' type='text/css' />
+
+<script class='script JQUERYPLUGIN' src='../pub/System/JQueryPlugin/jquery-2.2.4.js'></script>
+<script class='script JQUERYPLUGIN::OBSERVER' src='../pub/System/JQueryPlugin/plugins/observer/observer4abf.js?version=0.1'></script>
+<script class='script JQUERYPLUGIN::MIGRATE' src='../pub/System/JQueryPlugin/plugins/migrate/jquery.migrate4152.js?version=3.4.0'></script>
+<script class='script JQUERYPLUGIN::FOSWIKI' src='../pub/System/JQueryPlugin/plugins/foswiki/jquery.foswikiae26.js?version=3.10'></script>
+<script class='script JQUERYPLUGIN::BROWSER' src='../pub/System/JQueryPlugin/plugins/browser/jquery.browser72db.js?version=0.1.0'></script>
+<script class='script JQUERYPLUGIN::EASING' src='../pub/System/JQueryPlugin/plugins/easing/jquery.easing7c6c.js?version=1.3'></script>
+<script class='script JQUERYPLUGIN::FOSWIKI::PREFERENCES foswikiPreferences' type='text/json'>{
+   "SCRIPTURLPATH" : "/wiki/bin",
+   "WIKIUSERNAME" : "Main.WikiGuest",
+   "PUBURL" : "https://biostat.app.vumc.org/wiki/pub",
+   "TOPIC" : "PowerSampleSize",
+   "SCRIPTURLPATHS" : {
+      "view" : "/wiki"
+   },
+   "NAMEFILTER" : "[\\\\\\s*?~^$@%`\"'&|<:;>\\[\\]#\\x00-\\x1f]",
+   "USERSWEB" : "Main",
+   "USERNAME" : "guest",
+   "SCRIPTURL" : "https://biostat.app.vumc.org/wiki/bin",
+   "COOKIEREALM" : "",
+   "PUBURLPATH" : "/wiki/pub",
+   "WIKINAME" : "WikiGuest",
+   "SKIN" : "natedit,pattern",
+   "SCRIPTSUFFIX" : "",
+   "URLHOST" : "https://biostat.app.vumc.org",
+   "SERVERTIME" : "19 Sep 2024 - 11:32",
+   "SYSTEMWEB" : "System",
+   "COOKIEPATH" : "/",
+   "WEB" : "Main"
+}
+</script>
+<script class='script JQUERYPLUGIN::METADATA' src='../pub/System/JQueryPlugin/plugins/metadata/jquery.metadata1446.js?version=2.1ef2bb44c86f5d0e98d55'></script>
+<script class='script JavascriptFiles/foswikiString' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiString.js"></script>
+<script class='script JavascriptFiles/foswikiPref' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiPref.js"></script>
+<script class='script JQUERYPLUGIN::TWISTY' src='../pub/System/TwistyPlugin/jquery.twisty327a.js?version=1.6.0'></script>
+<script class='script JQUERYPLUGIN::UI' src='../pub/System/JQueryPlugin/plugins/ui/jquery-uif90a.js?version=1.13.2'></script>
+<script class='script JQUERYPLUGIN::UI::AUTOCOMPLETE' src='../pub/System/JQueryPlugin/plugins/ui/jquery.ui.autocomplete.initf90a.js?version=1.13.2'></script>
+<script class='script JSCalendarContrib/calendar' src='../pub/System/JSCalendarContrib/calendar.js'></script>
+<script class='script JSCalendarContrib/calendar-lang' src='../pub/System/JSCalendarContrib/lang/calendar-en.js'></script>
+<script class='script JSCalendarContrib/foswiki' src='../pub/System/JSCalendarContrib/foswiki.js'></script>
+<script class='script JavascriptFiles/foswikiForm' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiForm.js"></script>
+<script class='script JavascriptFiles/strikeone' type="text/javascript" src="../pub/System/JavascriptFiles/strikeone.js"></script>
+<script class='script PatternSkin/pattern' type="text/javascript" src="../pub/System/PatternSkin/pattern.js"></script>
+</head> 
+<body class="foswikiNoJs patternViewPage foswikiHasChangePermission foswikiGuest">
+<span id="PageTop"></span><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow"><div id="patternTopBar">
+  <div id="patternTopBarContentsWrapper">
+	 <div id="patternTopBarContents">
+<table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="WebHome.html"><img src="../pub/Main/SitePreferences/Lockup_VUMC_DeptofBiostatistics_COLORe.png" border="0" alt="Vanderbilt Biostatistics Home" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+  <ul>
+     <li><form name="jumpForm" action="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize">
+<input type="text" class="foswikiInputField foswikiDefaultText" name="topic" id="jumpFormField" title="Jump" size="size='18'" value="" />
+<script type="text/javascript">
+jQuery(function() {
+  $('#jumpFormField').autocomplete({
+    source: "https://biostat.app.vumc.org/wiki/System/JumpAutocompleteImpl?section=topic;skin=text;contenttype=application/json;web=all;",
+    select: function(event, ui) {
+      window.location.href = "https://biostat.app.vumc.org/wiki/" + ui.item.value;
+    }
+  });
+});
+</script>
+<noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript></form></li>
+     <li><form name="quickSearchForm" action="https://biostat.app.vumc.org/wiki/Main/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Main" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript></form><div style="padding-top: 8px"><a href="../System/UserRegistration.html">Register</a> | <a href="https://biostat.app.vumc.org/wiki/bin/login?foswiki_origin=GET%2cview%2c/wiki/Main/PowerSampleSize">Log In</a></div></li>
+  </ul>
+<p></p>
+
+</td></tr></table></div>
+  </div>
+</div>
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter" class="clear">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop clear"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="../index.html">Vanderbilt Biostatistics Wiki</a><span class='foswikiSeparator'>&gt;</span><a href="WebHome.html">Main Web</a><span class='foswikiSeparator'>&gt;</span><a href="WikiUsers.html">TWikiUsers</a><span class='foswikiSeparator'>&gt;</span><a href="DalePlummer.html">DalePlummer</a><span class='foswikiSeparator'>&gt;</span><a href="PowerSampleSize.html" title='Topic revision: 61 (30 Jul 2024 - 11:16:17)'>PowerSampleSize</a> <span class='patternRevInfo'>(30 Jul 2024, <a href="https://biostat.app.vumc.org/wiki/Main/WillGray">WillGray</a>)</span></span><span class="patternToolBar foswikiRight"><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/PowerSampleSize?t=1726763566' rel='nofollow' title='Edit this topic text' >Edit </a><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/attach/Main/PowerSampleSize' rel='nofollow' title='Attach an image or document to this topic'>Attach</a><span></span></span></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script> <script type="text/javascript"> var pageTracker = _gat._getTracker("UA-5781043-1"); pageTracker._trackPageview(); </script>
+<p></p>
+
+<h1 id="PS:_Power_and_Sample_Size_Calculation">  PS: Power and Sample Size Calculation </h1>
+<p class='p'>PS: Power and Sample Size Calculation version 3.1.6, October 2018</p>
+
+by <a href="https://biostat.app.vumc.org/wiki/Main/WilliamDupont">William D. Dupont</a> and <a href="DalePlummer.html">Walton D. Plummer, Jr.</a>
+<p></p>
+
+<a href="https://biostat.app.vumc.org/pshtmlhelp/pshelp/html/pshe1ylv.htm">Online Help</a>
+<p></p>
+
+<div class="foswikiToc" id="foswikiTOC"> <ul>
+<li> <a href="#Downloading_and_Installing_the_PS_Software"> Downloading and Installing the PS Software </a> <ul>
+<li> <a href="#Windows"> Windows </a>
+</li> <li> <a href="#Macintosh"> Macintosh </a>
+</li> <li> <a href="#Linux"> Linux </a>
+</li></ul> 
+</li> <li> <a href="#Web_45based_Program"> Web-based Program </a> <ul>
+<li> <a href="#Authorship_and_Feedback"> Authorship and Feedback </a>
+</li></ul> 
+</li> <li> <a href="#Feedback"> Feedback </a>
+</li> <li> <a href="#Study_Designs_That_Can_Be_Evaluated_By_This_Program"> Study Designs That Can Be Evaluated By This Program </a>
+</li> <li> <a href="#References"> References </a>
+</li> <li> <a href="#Suggested_citation"> Suggested citation </a>
+</li> <li> <a href="#Release_Notes"> Release Notes </a>
+</li> <li> <a href="#Acknowledgements"> Acknowledgements </a>
+</li></ul> 
+</div>
+<p class='p'>PS is an interactive program for performing power and sample size calculations that may be downloaded for free. It can be used for studies with dichotomous, continuous, or survival response measures. The alternative hypothesis of interest may be specified either in terms of differing response rates, means, or survival times, or in terms of relative risks or odds ratios. Studies with dichotomous or continuous outcomes may involve either a matched or independent study design. The program can determine the sample size needed to detect a specified alternative hypothesis with the required power, the power with which a specific alternative hypothesis can be detected with a given sample size, or the specific alternative hypotheses that can be detected with a given power and sample size.</p>
+
+<p class='p'>The PS program can produce graphs to explore the relationships between power, sample size and detectable alternative hypotheses. It is often helpful to hold one of these variables constant and plot the other two against each other. The program can generate graphs of sample size versus power for a specific alternative hypothesis, sample size versus detectable alternative hypotheses for a specified power, or power versus detectable alternative hypotheses for a specified sample size. Linear or logarithmic axes may be used for either axes. Multiple curves can be plotted on a single graphic.</p>
+
+<h2 id="Downloading_and_Installing_the_PS_Software"> Downloading and Installing the PS Software </h2>
+<p></p>
+
+The PS program runs on the Microsoft Windows operating systems (Windows XP and later).  We have also installed the program on Linux and Macintosh computers using a program called <a href="http://www.winehq.org/">Wine</a> that facilitates running Windows software on other operating systems.
+<p></p>
+
+<h3 id="Windows"> Windows </h3>
+<a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/pssetup3.exe"><img width="32" alt="ps_icon.jpg" src="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/PS_icon.jpg" height="32" /></a>  <a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/pssetup3.exe">pssetup3.exe (2.5 MB)</a>
+<p></p>
+
+To obtain the software, click <a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/pssetup3.exe">PS (2.5 MB)</a> and instruct your browser to download the file to a folder on your computer. To avoid problems with the installation process, it is helpful if the target folder is empty.  A file called <em>pssetup3.exe</em> will be downloaded to this location.   Run <em>pssetup3.exe</em> to extract the needed files and install the program.
+<p class='p'>To run the PS program after it has been installed, click the Start button, select Programs and then click PS. Click the Overview button for an introduction to the program and instruction on its use. PS is a self-documented program with extensive interactive help.</p>
+
+<em>Caution:  We know of a bug in one of the third-party tools that we use that causes the program to malfunction when the Windows language is set to something other than English.  We apologize for any inconvenience that this problem causes.</em> 
+<p></p>
+
+<h3 id="Macintosh"> Macintosh </h3>
+See <a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/Play_PS_software.pdf">Play_PS_software.pdf (PDF)</a> for instruction to show how to install PS software step-by-step, especially for beginners who are not familiar with Terminal on Mac.  Thanks to Sheau-Chiann Chen for this excellent documentation.
+<p></p>
+
+<h3 id="Linux"> Linux </h3>
+In the past we have tried to supply installation packages that allowed the installation of the PS program in one step.  For a number of reasons, this has been a troublesome approach.  There are many Linux distributions in use.  It is difficult to make an installer that works correctly on all of these.
+<p></p>
+
+Our current recommendation is to use the Wine graphical front end program <a href="http://www.playonlinux.com/en/">PlayOnLinux (for Linux)</a>. PlayOnLinux is free software that simplifies the installation and use of Windows software on other platforms.
+<p></p>
+
+The process for installing PS involves 3 steps: <ol>
+<li> Download and install PlayOnLinux from the site linked above.
+</li> <li> Download the PS installer (<a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/pssetup3.exe">pssetup3.exe</a>)
+</li> <li> Run PlayOnLinux to install and use the PS program on your computer.
+</li></ol> 
+<p class='p'>PlayOnLinux inspects the software to be installed and attempts to also install other packages and tools that are necessary for the PS program to run correctly.</p>
+
+<a href="http://www.winehq.org/about/">Wine</a> (originally an acronym for "Wine Is Not an Emulator") is a compatibility layer capable of running Windows applications on several POSIX-compliant operating systems, such as Linux, Mac OSX, &amp; BSD.
+<p class='p'>There are a number Wine implementations and Wine front ends available.  Our recommendation is not the only approach.  Suggestions are welcome.</p>
+
+(<a href="https://biostat.app.vumc.org/wiki/Main/OldPSInstructions">old Macintosh and Linux installation instructions</a>)
+<p></p>
+
+<h2 id="Web_45based_Program"> Web-based Program </h2>
+A web-based version of this program has been posted at <a href="https://cqsclinical.app.vumc.org/ps">https://cqsclinical.app.vumc.org/ps</a> . It has a brand-new interface that is far more interactive than the original.  Its use is fairly self-explanatory. However, we have posted the following YouTube tutorials on features of the new program.  These are:
+<p></p>
+
+<a href="https://youtu.be/6haTV0_dJPs">Introduction</a> <br>
+<a href="https://youtu.be/3IVxbQv8d9E">Drawing multiple curves on the same graph</a> <br>
+<a href="https://youtu.be/dHwV59aepD8">Customizing graphs</a> <br>
+<a href="https://youtu.be/ioozjDhOCo8">Exporting graphs</a> <br>
+<a href="https://youtu.be/j-Vetkevz18">Changing the aspect ratio of graphs showing only high-powered alternatives</a>
+<p class='p'>The program was designed to produce publication-quality graphs as well as to help students understand how sample size, power, and within-group dispersion are interrelated.</p>
+
+<!--
+<h3 id="Running_the_New_Program_Offline"> Running the New Program Offline </h3>
+This program can also be run offline on any computer that can run R.  To download the program you need to 
+<p></p>
+ <ol>
+<li> Install RStudio on your computer
+</li> <li> Open RStudio and copy and paste the following commands into the source window <ul>
+<li> <code>library(devtools)</code>
+</li> <li> <code>install_github("vubiostat/ps")</code>
+</li> <li> <code>library(ps)</code>
+</li> <li> <code>runPS()</code>
+</li></ul> 
+</li> <li> Select these commands and click on Run. This will download the program and open the new PS command interface.
+</li> <li> On subsequent use you need only execute the commands
+</li></ol> 
+<pre>
+&#62; library(ps)
+&#62; runPS()
+</pre>
+ -->
+<h3 id="Authorship_and_Feedback"> Authorship and Feedback </h3>
+The new PS interface was designed and written by Jeremy Stephens, W. Dale Plummer, Jeffrey D. Blume and William D. Dupont from the Department of Biostatistics and Vanderbilt University School of Medicine.
+<p class='p'>The web-based version of this program is still in beta-test mode. As of January 2020, it and can only handle designs with continuous or dichotomous response measures.  Additional modules will be added as time permits.</p>
+
+<h2 id="Feedback"> Feedback </h2>
+We are interested in feedback. If you have any questions or comments about our software please send email to <a href="mailto&#58;dale&#46;plummer&#64;vumc&#46;org">dale.plummer&#64;vumc.org</a>. It will be appreciated.
+<p></p>
+
+<h2 id="Study_Designs_That_Can_Be_Evaluated_By_This_Program"> Study Designs That Can Be Evaluated By This Program </h2>
+<p></p>
+ <ol>
+<li> Case-Control Studies -- Corrected and uncorrected chi-squared contingency table tests, Fisher&rsquo;s exact-test: The method of Schlesselman (1982) is used for studies with independent case and control groups that will be analyzed using an uncorrected chi-squared test; the method of Casagrande et al. (1978) is used for independent studies that will be analyzed using continuity corrected chi-squared statistics or Fisher&rsquo;s exact-test. When the case and control sample sizes are unequal, PS uses the generalization of Casagrande&rsquo;s method proposed by Fleiss (1981). The alternative hypotheses may be specified in terms of odds ratios or exposure prevalence rates.
+</li> <li> Matched Case-Control Studies -- McNemar&rsquo;s Test: The method of Dupont (1988) is used for studies with paired or matched cases and controls. The alternative hypotheses are specified in terms of odds ratios.
+</li> <li> Multiple 2 X 2 tables -- Mantel-Haenszel Test: The method of Wittes and Wallenstein (1987) is used. Assume that each 2 X 2 table consists of cases and controls selected from a different stratum that is defined by one or more confounding variables. The odds ratio for disease in exposed subjects compared to unexposed subjects is assumed to be equal within all strata. The alternative hypotheses are specified in terms of this odds ratio.
+</li> <li> Cohort Studies With Dichotomous Outcomes -- Independent contingency table tests, McNemar&rsquo;s test: The methods of Schlesselman (1982), Casagrande et al. (1978), Fleiss (1981), and Dupont (1988) are available. The alternative hypotheses may be specified in terms of relative risks or outcome probabilities.
+</li> <li> Linear Regression (1 Treatment) -- Testing the slope of a simple linear regression line: The method of Dupont and Plummer (1998) is used to design studies in which we wish to detect a regression slope of a given magnitude. The values of the independent (x) variable of the regression line may either be specified by the investigator or determined observationally when the study is performed. In the latter case, the investigator must estimate the standard deviation of the independent variable(s).
+</li> <li> Linear Regression (2 Treatments) -- Comparing the slopes and intercepts of two independent linear regressions: The approach of Dupont and Plummer (1998) is used to design studies in which we wish to determine whether the slopes or intercepts of two independent regression lines differ by a given amount. The values of the independent (x) variables of the regression lines may either be specified by the investigator or determined observationally when the study is performed. In the latter case, the investigator must estimate the standard deviations of the independent variables.
+</li> <li> Survival Studies -- Evaluating independent cohorts using the log-rank test: The approach of Schoenfeld and Richter (1982) is used. The ratio of the number of control subjects per experimental subject in the cohorts being compared may be specified by the user. The alternative hypotheses are specified in terms of the hazard ratio for control subjects relative to experimental subjects or the median survival times for control and experimental subjects.
+</li> <li> Continuous Response Measures in Two Groups -- Paired and independent t-tests: The approach of Dupont and Plummer (1990) is used for paired and independent samples. The ratio of the number of control subjects per experimental subject may be specified by the user. This method produces results that are in close agreement with those of Pearson and Hartley (1970).
+</li></ol> 
+<p></p>
+
+<h2 id="References"> References </h2> <ol>
+<li> Casagrande JT, Pike MC, Smith PG: "An Improved Approximate Formula for Calculating Sample Sizes for Comparing Two Binomial Distributions", Biometrics, 1978; 34:483-486.
+</li> <li> Dupont, WD: "Power Calculations for Matched Case-Control Studies", Biometrics, 1988; 44:1157-1168.
+</li> <li> Dupont WD, Plummer WD: "Power and Sample Size Calculations: A Review and Computer Program", Controlled Clinical Trials 1990; 11:116-28.
+</li> <li> Dupont WD, Plummer WD: "Power and Sample Size Calculations for Studies Involving Linear Regression", Controlled Clinical Trials 1998; 19:589-601.
+</li> <li> Fleiss JL: "Statistical Methods for Rates and Proportions" 2nd Ed. New York: John Wiley, 1981:38-46.
+</li> <li> Pearson ES and Hartley HO: "Biometrika Tables for Statisticians Vol I", 3rd Ed., Cambridge: Cambridge U. Press, 1970.
+</li> <li> Schlesselman: Case-control Studies: Design, Conduct, Analysis. New York: Oxford U. Press; 1982:144-152.
+</li> <li> Schoenfeld DA, Richter JR: "Nomograms for Calculating the Number of Patients Needed for a Clinical Trial With Survival as an Endpoint" Biometrics 1982; 38:163-170.
+</li> <li> Wittes J, Wallenstein S: "The Power of the Mantel-Haenszel Test" J Am Stat Assoc, 1987; 82:1104-1109.
+</li> <li> Visual Components Sybase Inc. First Impression Active X User's Guide: High Performance Software for Charting Data for Microsoft Visual Basic, Visual C++, and Other Languages. Version 5.0. Overland Park, KS: Visual Components Sybase Inc.
+</li> <li> Mantel, N., &amp; Haenszel, W. (1959) Statistical aspects of the analysis of data from retrospective studies of disease. Journal of the National Cancer Institute, 22, 719-748.
+</li> <li> Dupont, WD (2008). Statistical Modeling for Biomedical Researchers, 2nd Edition. Cambridge, U.K.: Cambridge University Press.
+</li></ol> 
+<p></p>
+
+<h2 id="Suggested_citation"> Suggested citation </h2>
+<p class='p'>Dupont WD, Plummer WD: 'Power and Sample Size Calculations: A Review and Computer Program', Controlled Clinical Trials 1990; 11:116-28.</p>
+
+<p class='p'>or</p>
+
+<p class='p'>Dupont WD, Plummer WD: 'Power and Sample Size Calculations for studies Involving Linear Regression', Controlled Clinical Trials 1998; 19:589-601.</p>
+
+<h2 id="Release_Notes"> Release Notes </h2>
+<a href="https://biostat.app.vumc.org/wiki/Main/PSreleaseNotes">Release Notes</a>
+<p></p>
+
+<h2 id="Acknowledgements"> Acknowledgements </h2>
+<p class='p'>This work was supported in part through a grant from Vanderbilt University's Clinical and Translational Science Award (CTSA) program (grant UL1 RR024975 from the NCRR/NIH).</p>
+
+<p class='p'>We are grateful to Gordon R. Bernard for his support and to Yuwei Zhu for her assistance in editing this program.</p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/us/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This web page and the PS: Power and Sample Size Calculation program</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="PowerSampleSize.html" property="cc:attributionName" rel="cc:attributionURL">William D. Dupont</a> and W. Dale Plummer, Jr. is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 United States License</a>.
+<p></p>
+
+<script data-goatcounter="https://vbiostat.goatcounter.com/count"
+        async src="http://gc.zgo.at/count.js"></script> </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><div class="foswikiAttachments foswikiFormStep" style="overflow:auto">
+<div class="twistyPlugin foswikiMakeVisible"><span id="topicattachmentslist1show" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a class="patternTwistyButton" href="#"><img src="../pub/System/DocumentGraphics/toggleopen.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>5</span></span></a></span><span id="topicattachmentslist1hide" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a class="patternTwistyButton" href="#"><img src="../pub/System/DocumentGraphics/toggleclose.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>5</span></span></a></span></div><div class="twistyPlugin"><div id="topicattachmentslist1toggle" style="" class="twistyRememberSetting twistyContent twistyInited">
+<table class="foswikiTable" id="tablePowerSampleSize1" rules="none">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?sortcol=0;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">I</a> </th>
+			<th class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?sortcol=1;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Attachment</a> </th>
+			<th class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?sortcol=2;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Action</a> </th>
+			<th class="foswikiTableCol3"> <a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?sortcol=3;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Size</a> </th>
+			<th class="foswikiTableCol4"> <a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?sortcol=4;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol5"> <a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?sortcol=5;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Who</a> </th>
+			<th class="foswikiTableCol6 foswikiLastCol"> <a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?sortcol=6;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='https://biostat.app.vumc.org/wiki/pub/System/DocumentGraphics/bmp.png' width='16' height='16' alt='PS_icon.ico' /></span><span class="foswikiHidden">ico</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/PS_icon.ico">PS_icon.ico</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/PowerSampleSize?filename=PS_icon.ico;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 3 K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">22 Aug 2011 - 09:45</span> </td>
+			<td class="foswikiTableCol5"> <a href="DalePlummer.html">DalePlummer</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/jpg.png' width='16' height='16' alt='PS_icon.jpg' /></span><span class="foswikiHidden">jpg</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/PS_icon.jpg">PS_icon.jpg</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/PowerSampleSize?filename=PS_icon.jpg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 912 bytes </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">22 Aug 2011 - 09:44</span> </td>
+			<td class="foswikiTableCol5"> <a href="DalePlummer.html">DalePlummer</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/png.png' width='16' height='16' alt='PS_icon.png' /></span><span class="foswikiHidden">png</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/PS_icon.png">PS_icon.png</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/PowerSampleSize?filename=PS_icon.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 1 K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">22 Aug 2011 - 09:45</span> </td>
+			<td class="foswikiTableCol5"> <a href="DalePlummer.html">DalePlummer</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='https://biostat.app.vumc.org/wiki/pub/System/DocumentGraphics/pdf.png' width='16' height='16' alt='Play_PS_software.pdf' /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/Play_PS_software.pdf">Play_PS_software.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/PowerSampleSize?filename=Play_PS_software.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 2 MB </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">10 Oct 2023 - 14:48</span> </td>
+			<td class="foswikiTableCol5"> <a href="DalePlummer.html">DalePlummer</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <span class='foswikiIcon'><img src='https://biostat.app.vumc.org/wiki/pub/System/DocumentGraphics/exe.png' width='16' height='16' alt='pssetup3.exe' /></span><span class="foswikiHidden">exe</span> </td>
+			<td class="foswikiTableCol1 foswikiLast"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/PowerSampleSize/pssetup3.exe">pssetup3.exe</a> </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/PowerSampleSize?filename=pssetup3.exe;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3 foswikiLast" style="text-align:right"> 2 MB </td>
+			<td class="foswikiTableCol4 foswikiLast"> <span class="foswikiNoBreak">24 Oct 2018 - 12:01</span> </td>
+			<td class="foswikiTableCol5 foswikiLast"> <a href="DalePlummer.html">DalePlummer</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> PS program installer </td>
+		</tr>
+	</tbody></table>
+</div></div></div><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/PowerSampleSize?t=1726763566' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit </a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/attach/Main/PowerSampleSize' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/oops/Main/PowerSampleSize?template=oopshistory' rel='nofollow' title='View complete topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a>: r61&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/PowerSampleSize?rev1=60;rev2=61" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?rev=60" rel="nofollow">r60</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/PowerSampleSize?rev1=59;rev2=60" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?rev=59" rel="nofollow">r59</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/PowerSampleSize?rev1=58;rev2=59" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?rev=58" rel="nofollow">r58</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?template=backlinksweb' rel='nofollow' title='Search the Main Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/PowerSampleSize?t=1726763566;nowysiwyg=1' rel='nofollow' title='Edit Wiki text' accesskey='w'>Edit <span class='foswikiAccessKey'>w</span>iki text</a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/PowerSampleSize?template=more&amp;maxrev=61&amp;currrev=61' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: r61 - 30 Jul 2024, <a href="https://biostat.app.vumc.org/wiki/Main/WillGray">WillGray</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator">
+<a href='WebHome.html'>Main</a>
+</div> <ul>
+<li> <strong><a href="https://www.vumc.org/biostatistics/">Department Home Page</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong><a href="http://www.vanderbilt.edu/biostatistics/graduate/">Biostatistics Graduate Program</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong><a href="https://www.vumc.org/">Vanderbilt University Medical Center</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong>Main Web</strong>
+</li> <li> <a class="foswikiCurrentWebHomeLink" href="WebHome.html">Main Web Home</a>
+</li> <li> <a href="WebSearch.html">Search</a>
+</li> <li> <a href="WebChanges.html">Recent Changes</a>
+</li> <li> <a href="../bin/changes/Main.html">Changes</a>
+</li> <li> <a href="WebIndex.html">Topic list</a>
+</li></ul> 
+<hr /> <ul>
+<li> <strong>Biostatistics Webs</strong> <ul>
+<li> <a href="../Archive/WebHome.html">Archive</a>
+</li> <li> <a class="foswikiCurrentWebHomeLink" href="WebHome.html">Main</a>
+</li> <li> <a href="../Sandbox/WebHome.html">Sandbox</a>
+</li> <li> <a href="../System/WebHome.html">System</a>
+</li></ul> 
+</li></ul> 
+<p class='p'></p>
+
+<p class='p'></p>
+
+</div></div>
+</div>
+</div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"><span class="foswikiRight"> <a href="http://foswiki.org/"><img src="../pub/System/ProjectLogos/foswiki-badge.png" alt="This site is powered by Foswiki" title="This site is powered by Foswiki" /></a></span>Copyright &amp;© 2013-2022 by the contributing authors. All material on this collaboration platform is the property of the contributing authors. <br /> Ideas, requests, problems regarding Vanderbilt Biostatistics Wiki? <a href='mailto:biostat-it@vumc.org?subject=Vanderbilt Biostatistics Wiki%20Feedback%20on%20Main.PowerSampleSize'>Send feedback</a></div></div></div>
+</div>
+</div>
+</div>
+</div></body>
+<!-- Mirrored from biostat.app.vumc.org/wiki/Main/PowerSampleSize by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 16:34:08 GMT -->
+</html>
